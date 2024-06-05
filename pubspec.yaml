@@ -40,7 +40,7 @@ dependencies:
   equatable: ^2.0.5
 
   #util
-  velocity_x: ^4.2.1
+  velocity_x: ^4.1.2
 
   #data
   shared_preferences: ^2.0.15
@@ -109,6 +109,7 @@ flutter:
     - assets/image/
     - assets/image/icon/
     - assets/image/flag/
+    - assets/image/splash/
     - assets/image/darkmode/
     - assets/translations/
     - assets/
