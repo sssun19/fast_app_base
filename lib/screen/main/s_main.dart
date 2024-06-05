@@ -34,11 +34,11 @@ class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMi
     // await login();
     // await loading();
 
-    // delay((){
-    //   FlutterNativeSplash.remove();
-    // }, 1500.ms);
+    delay((){
+      FlutterNativeSplash.remove();
+    }, 1500.ms);
 
-    FlutterNativeSplash.remove();
+    // FlutterNativeSplash.remove();
   }
 
   @override
