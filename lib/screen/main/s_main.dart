@@ -23,7 +23,7 @@ class MainScreenState extends State<MainScreen>
     TabItem.benefit,
     TabItem.ttosspay,
     TabItem.stock,
-    TabItem.all,
+    TabItem.all
   ];
   final List<GlobalKey<NavigatorState>> navigatorKeys = [];
 
