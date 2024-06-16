@@ -14,7 +14,7 @@ enum TabItem {
   stock(Icons.candlestick_chart, '주식', StockFragment()),
   all(Icons.menu, '전체', AllFragment());
 
-  final IconData activeIcon; // final String activeImagePath; assets 파일 내부의 내 이미지 파일로 바텀네비게이터 아이콘 바꾸기
+  final IconData activeIcon; // final String activeImagePath; assets 파일 내부의 내 이미지 파일로 바텀 네비게이터 아이콘 바꾸기
   final IconData inActiveIcon;
   final String tabName;
   final Widget firstPage;
