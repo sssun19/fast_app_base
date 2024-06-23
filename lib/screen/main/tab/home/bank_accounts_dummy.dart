@@ -30,6 +30,9 @@ main() {
   //O(n)
   print(bankAccounts.contains(bankAccountShinhan1));
 
+  bankAccounts.toSet();
+  bankSet.toList();
+
 }
 
 //List
