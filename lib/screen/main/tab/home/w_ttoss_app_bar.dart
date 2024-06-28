@@ -24,7 +24,7 @@ class _TtossAppBarState extends State<TtossAppBar> {
           Image.asset("$basePath/icon/map_point.png", height: 30),
           width10,
           Tap(
-            onTap: (){
+            onTap: () {
               setState(() {
                 _showRedDot = !_showRedDot;
               });
@@ -32,23 +32,19 @@ class _TtossAppBarState extends State<TtossAppBar> {
             child: Stack(
               children: [
                 Image.asset("$basePath/icon/notification.png", height: 30),
-                if (_showRedDot)Positioned.fill( //_showRedDot 이 true 일 경우 구문이 보이게 됨.
-                  child: Align(
-                    alignment: Alignment.topRight,
-                    child: Container(
-                      width: 6,
-                      height: 6,
-                      decoration: const BoxDecoration(shape: BoxShape.circle, color: Colors.red),
-                    ),
-                  )) else Positioned.fill( //_showRedDot 이 true 일 경우 구문이 보이게 됨.
+                if (_showRedDot)
+                  Positioned.fill(
+                    //_showRedDot 이 true 일 경우 구문이 보이게 됨.
                     child: Align(
                       alignment: Alignment.topRight,
                       child: Container(
                         width: 6,
                         height: 6,
-                        decoration: const BoxDecoration(shape: BoxShape.circle, color: Colors.blue),
+                        decoration: const BoxDecoration(
+                            shape: BoxShape.circle, color: Colors.red),
                       ),
-                    )),
+                    ),
+                  ),
               ],
             ),
           ),
