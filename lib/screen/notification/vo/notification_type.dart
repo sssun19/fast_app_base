@@ -6,7 +6,7 @@ enum NotificationType {
   people('토스 공동구매', '$basePath/notification/notification_t.png'),
   stock('토스증권 컨텐츠', '$basePath/notification/notification_stock.png'),
   walk('만보기', '$basePath/notification/notification_walk.png'),
-  moneyTip('오늘의 머니 팁', '$basePath/notification/notification_idea.png'),
+  moneyTip('오늘의 머니 팁', '$basePath/notification/notification_idea.png');
 
   const NotificationType(this.name, this.iconPath);
 
