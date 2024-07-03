@@ -12,11 +12,13 @@ final List<TtossNotification> notificationDummies = <TtossNotification>[
     NotificationType.stock,
     '인적분할에 대해 알려드릴게요.',
     DateTime.now().subtract(1.hours),
+    isRead: true,
   ),
   TtossNotification(
     NotificationType.walk,
     '1,000걸음 이상 걸었다면 포인트 받으세요.',
     DateTime.now().subtract(1.hours),
+    isRead: true,
   ),
   TtossNotification(
     NotificationType.moneyTip,

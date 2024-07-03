@@ -1,6 +1,7 @@
 import 'package:fast_app_base/common/common.dart';
 import 'package:fast_app_base/screen/notification/vo/vo_notification.dart';
 import 'package:flutter/material.dart';
+import 'package:timeago/timeago.dart' as timeago;
 
 class NotificationItemWidget extends StatefulWidget {
   final TtossNotification notification;
@@ -32,10 +33,23 @@ class _NotificationItemWidgetState extends State<NotificationItemWidget> {
                 widget.notification.type.iconPath,
                 width: iconWidth,
               ),
-              widget.notification.type.name.text.size(12).color(context.appColors.lessImportantText).make()
+              widget.notification.type.name.text
+                  .size(12)
+                  .color(context.appColors.lessImportantText)
+                  .make(),
+              emptyExpanded,
+              timeago
+                  .format(widget.notification.time, locale: context.locale.languageCode) //콘텍스트 랭귀지코드로 받으면 설정 언어가 영문일 경우 en, 한글일 경우 ko 를 가져오게 됨.
+                  .text
+                  .color(context.appColors.lessImportantText)
+                  .size(13)
+                  .make(),
+              width10,
             ],
           ),
-          widget.notification.description.text.make().pOnly(left: leftPadding + iconWidth),
+          widget.notification.description.text
+              .make()
+              .pOnly(left: leftPadding + iconWidth),
         ],
       ),
     );
