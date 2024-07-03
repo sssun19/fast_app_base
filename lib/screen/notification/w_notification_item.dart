@@ -44,13 +44,13 @@ class _NotificationItemWidgetState extends State<NotificationItemWidget> {
                 ),
                 widget.notification.type.name.text
                     .size(12)
-                    .color(context.appColors.lessImportantText)
+                    .color(context.appColors.lessImportant)
                     .make(),
                 emptyExpanded,
                 timeago
                     .format(widget.notification.time, locale: context.locale.languageCode) //콘텍스트 랭귀지코드로 받으면 설정 언어가 영문일 경우 en, 한글일 경우 ko 를 가져오게 됨.
                     .text
-                    .color(context.appColors.lessImportantText)
+                    .color(context.appColors.lessImportant)
                     .size(13)
                     .make(),
                 width10,
